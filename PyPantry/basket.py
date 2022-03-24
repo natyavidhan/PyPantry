@@ -36,7 +36,3 @@ class PyPantryBasket:
             'Content-Type': 'application/json'
         }
         response = requests.request("POST", self.url, headers=headers, data=payload)
-    
-    def update(self, query:dict, data:list):
-        data = self.find(query)
-        
