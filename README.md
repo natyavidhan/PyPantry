@@ -1,2 +1,2 @@
 # PyPantry
-A API wrapper for Pantry json database
+An API wrapper for Pantry json database
