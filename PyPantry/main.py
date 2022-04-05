@@ -18,5 +18,8 @@ class PyPantry:
         headers = {
             'Content-Type': 'application/json'
         }
-        response = requests.request("POST", self.url+f"/basket/{basket}", headers=headers, data=payload)
+        response = requests.request(
+            "POST", f"{self.url}/basket/{basket}", headers=headers, data=payload
+        )
+
         print(response.text)
